@@ -29,3 +29,15 @@ https://developer.apple.com/library/archive/qa/qa1686/_index.html
 
 ### 7. Free App Icon Creator
 https://www.canva.com/
+
+### 8. Swift Programming Book
+https://docs.swift.org/swift-book/
+
+### 9. Apple Developer Forums
+https://forums.developer.apple.com/welcome
+
+### 10. Apple Developer Documentation
+https://developer.apple.com/documentation
+
+### 11. Apple Documentation Archive
+https://developer.apple.com/library/archive/navigation/
