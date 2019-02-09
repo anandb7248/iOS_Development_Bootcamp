@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic 8 Ball                    Ask Me Anything!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnH-HD-mkp">
+                                <rect key="frame" x="14" y="60" width="347" height="108.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gnH-HD-mkp" secondAttribute="height" multiplier="173:54" id="BW2-Sg-0Vz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-mJ-648">
+                                <rect key="frame" x="16.5" y="222.5" width="342" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ruk-mJ-648" secondAttribute="height" multiplier="343:223" id="5bF-W8-hll"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUM-az-EVB">
+                                <rect key="frame" x="68" y="525.5" width="239" height="60.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rUM-az-EVB" secondAttribute="height" multiplier="119:30" id="QsJ-ws-wWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="40"/>
+                                <state key="normal" title="Ask"/>
+                                <connections>
+                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l21-KN-ajj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.66666666666666663" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rUM-az-EVB" firstAttribute="top" secondItem="ruk-mJ-648" secondAttribute="bottom" constant="81" id="4KV-fq-4hP"/>
+                            <constraint firstItem="ruk-mJ-648" firstAttribute="centerX" secondItem="rUM-az-EVB" secondAttribute="centerX" id="Cwz-yp-lfb"/>
+                            <constraint firstItem="ruk-mJ-648" firstAttribute="top" secondItem="gnH-HD-mkp" secondAttribute="bottom" constant="54" id="Fye-wO-3bf"/>
+                            <constraint firstItem="gnH-HD-mkp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qj7-96-MCM"/>
+                            <constraint firstItem="gnH-HD-mkp" firstAttribute="centerX" secondItem="ruk-mJ-648" secondAttribute="centerX" id="Uqh-MM-LgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rUM-az-EVB" secondAttribute="bottom" constant="81" id="cCu-Vm-Xfp"/>
+                            <constraint firstItem="gnH-HD-mkp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="glB-4I-vK4"/>
+                            <constraint firstItem="gnH-HD-mkp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="llN-Xw-8GF"/>
+                            <constraint firstItem="ruk-mJ-648" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qZg-0z-OjJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="magicBallImageView" destination="ruk-mJ-648" id="lCW-cR-Uto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="457.5" height="410.5"/>
+    </resources>
+</document>
