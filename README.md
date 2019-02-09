@@ -1,7 +1,13 @@
 # iOS_Dev_Bootcamp
 
+## Xylophone Music Player
+<img width="375" alt="screen shot 2019-02-09 at 3 28 52 pm" src="https://user-images.githubusercontent.com/19628705/52527775-e4f2d180-2c82-11e9-949b-27ffa18a6995.png">
+
+## Magic 8 Ball
+<img width="377" alt="screen shot 2019-02-08 at 4 25 53 pm" src="https://user-images.githubusercontent.com/19628705/52527774-e4f2d180-2c82-11e9-962c-9cc4c488d5c1.png">
+
 ## Dicee
-<img width="282" alt="screen shot 2019-02-07 at 11 37 23 pm" src="https://user-images.githubusercontent.com/19628705/52465590-f9748400-2b33-11e9-98b8-cf99769c311f.png">
+<img width="375" alt="screen shot 2019-02-07 at 11 37 23 pm" src="https://user-images.githubusercontent.com/19628705/52465590-f9748400-2b33-11e9-98b8-cf99769c311f.png">
 
 ## I Am Rich
 <img width="378" alt="screen shot 2019-02-07 at 7 36 09 pm" src="https://user-images.githubusercontent.com/19628705/52465595-fda0a180-2b33-11e9-903a-ab1e9c9e29fe.png">
@@ -41,3 +47,8 @@ https://developer.apple.com/documentation
 
 ### 11. Apple Documentation Archive
 https://developer.apple.com/library/archive/navigation/
+
+### 12. Apple API Error Lookup
+https://www.osstatus.com/
+
+
