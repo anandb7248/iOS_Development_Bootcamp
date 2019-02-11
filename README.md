@@ -28,7 +28,7 @@
 
 ## Useful Resources
 ### 1. iOS 12 Course Resources List
-https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+https://www.appbrewery.co/p/ios12-course-resources/
 
 ### 2. Preset Palettes
 https://flatuicolors.com/
@@ -62,3 +62,9 @@ https://developer.apple.com/library/archive/navigation/
 
 ### 12. Apple API Error Lookup
 https://www.osstatus.com/
+
+### 13. CocoaPods
+https://cocoapods.org/
+
+### 14. HTTP Status Codes
+https://www.restapitutorial.com/httpstatuscodes.html
