@@ -1,8 +1,10 @@
 # iOS_Dev_Bootcamp
 
+## Bitcoin Ticker
+![bitcoin](https://user-images.githubusercontent.com/19628705/52612448-95f19b80-2e3e-11e9-90b8-1d9c42b33903.gif)\
+
 ## Clima
 ![clima](https://user-images.githubusercontent.com/19628705/52604374-7139fb80-2e1f-11e9-8253-8aa5dc891ff9.gif)
-
 
 ## Auto Layout: Horizontal & Vertical Stack View
 <img width="372" alt="screen shot 2019-02-10 at 2 49 52 pm" src="https://user-images.githubusercontent.com/19628705/52540881-89d4e380-2d43-11e9-92ea-6abbb91eafee.png">
