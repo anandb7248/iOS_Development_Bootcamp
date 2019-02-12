@@ -1,5 +1,9 @@
 # iOS_Dev_Bootcamp
 
+## Clima
+![clima](https://user-images.githubusercontent.com/19628705/52604374-7139fb80-2e1f-11e9-8253-8aa5dc891ff9.gif)
+
+
 ## Auto Layout: Horizontal & Vertical Stack View
 <img width="372" alt="screen shot 2019-02-10 at 2 49 52 pm" src="https://user-images.githubusercontent.com/19628705/52540881-89d4e380-2d43-11e9-92ea-6abbb91eafee.png">
 <img width="825" alt="screen shot 2019-02-10 at 2 50 07 pm" src="https://user-images.githubusercontent.com/19628705/52540879-893c4d00-2d43-11e9-9bd9-b7856044a093.png">
