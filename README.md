@@ -1,5 +1,12 @@
 # iOS_Dev_Bootcamp
 
+## Flash Chat
+
+Home Screen                |  Register/Log In          |           Chat
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/19628705/52695789-3d93ca00-2f22-11e9-9108-99ee526d3f1e.png)  |  ![](https://user-images.githubusercontent.com/19628705/52695798-408eba80-2f22-11e9-8c3a-f22b0311f4f6.png)   |![](https://user-images.githubusercontent.com/19628705/52696626-4c7b7c00-2f24-11e9-8d23-de324b87e104.gif)
+
+
 ## Bitcoin Ticker
 ![bitcoin](https://user-images.githubusercontent.com/19628705/52612448-95f19b80-2e3e-11e9-90b8-1d9c42b33903.gif)\
 
@@ -7,12 +14,14 @@
 ![clima](https://user-images.githubusercontent.com/19628705/52604374-7139fb80-2e1f-11e9-8253-8aa5dc891ff9.gif)
 
 ## Auto Layout: Horizontal & Vertical Stack View
-<img width="372" alt="screen shot 2019-02-10 at 2 49 52 pm" src="https://user-images.githubusercontent.com/19628705/52540881-89d4e380-2d43-11e9-92ea-6abbb91eafee.png">
-<img width="825" alt="screen shot 2019-02-10 at 2 50 07 pm" src="https://user-images.githubusercontent.com/19628705/52540879-893c4d00-2d43-11e9-9bd9-b7856044a093.png">
+Landscape                  |  Portrait
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/19628705/52540881-89d4e380-2d43-11e9-92ea-6abbb91eafee.png) | ![](https://user-images.githubusercontent.com/19628705/52540879-893c4d00-2d43-11e9-9bd9-b7856044a093.png)
 
 ## Auto Layout: Pinning & Alignment
-<img width="372" alt="screen shot 2019-02-10 at 11 11 49 am" src="https://user-images.githubusercontent.com/19628705/52540860-598d4500-2d43-11e9-8942-b3086a990831.png">
-<img width="822" alt="screen shot 2019-02-10 at 11 12 04 am" src="https://user-images.githubusercontent.com/19628705/52540859-598d4500-2d43-11e9-84f4-47815b8f1494.png">
+Landscape                  |  Portrait
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/19628705/52540860-598d4500-2d43-11e9-8942-b3086a990831.png) | ![](https://user-images.githubusercontent.com/19628705/52540859-598d4500-2d43-11e9-84f4-47815b8f1494.png)
 
 ## Destini
 ![destini](https://user-images.githubusercontent.com/19628705/52531112-463b9480-2cc5-11e9-9a70-666dd7faaa13.gif)
