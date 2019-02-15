@@ -86,3 +86,6 @@ https://www.restapitutorial.com/httpstatuscodes.html
 
 ### 15. Git Practice
 https://learngitbranching.js.org/
+
+### 16. Xcode Code Sense
+https://stackoverflow.com/questions/6662395/xcode-intellisense-meaning-of-letters-in-colored-boxes-like-f-t-c-m-p-c-k-etc
