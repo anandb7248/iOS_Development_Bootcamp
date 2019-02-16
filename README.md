@@ -89,3 +89,9 @@ https://learngitbranching.js.org/
 
 ### 16. Xcode Code Sense
 https://stackoverflow.com/questions/6662395/xcode-intellisense-meaning-of-letters-in-colored-boxes-like-f-t-c-m-p-c-k-etc
+
+### 17. User Defaults
+https://developer.apple.com/documentation/foundation/userdefaults
+
+### 18. Apple Cocoa Design Patterns
+https://developer.apple.com/documentation/swift/cocoa_design_patterns#//apple_ref/doc/uid/TP40014216-CH7-ID177
