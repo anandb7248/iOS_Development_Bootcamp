@@ -95,3 +95,6 @@ https://developer.apple.com/documentation/foundation/userdefaults
 
 ### 18. Apple Cocoa Design Patterns
 https://developer.apple.com/documentation/swift/cocoa_design_patterns#//apple_ref/doc/uid/TP40014216-CH7-ID177
+
+### 19. NSPredicate
+https://nshipster.com/nspredicate/
