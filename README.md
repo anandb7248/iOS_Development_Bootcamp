@@ -98,3 +98,8 @@ https://developer.apple.com/documentation/swift/cocoa_design_patterns#//apple_re
 
 ### 19. NSPredicate
 https://nshipster.com/nspredicate/
+
+### 20. iOS Persistance
+<img width="1060" alt="screen shot 2019-02-15 at 5 33 57 pm" src="https://user-images.githubusercontent.com/19628705/52909406-dd13ce00-323c-11e9-8a1a-98ce2560e98a.png">
+
+
