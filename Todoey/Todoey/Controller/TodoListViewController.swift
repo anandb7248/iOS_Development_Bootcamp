@@ -7,33 +7,22 @@
 //
 
 import UIKit
-import CoreData
+import RealmSwift
 
 class TodoListViewController: UITableViewController {
     
-    var todoListArray: [TodoItem] = []
+    let realm = try! Realm()
+    
+    var itemResults: Results<Item>?
     var selectedCategory: Category? {
         didSet{
             loadItems()
         }
     }
-    let viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    // Create a plist file in the iOS sandbox, user directory
-    // Where we will store our custom data model
-    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Filemanager")
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -43,27 +32,34 @@ class TodoListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoListArray.count
+        return itemResults?.count ?? 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
-        let todoItem = todoListArray[indexPath.row]
         
-        cell.textLabel?.text = todoItem.title
-        cell.accessoryType = todoItem.done ? .checkmark : .none
+        if let todoItem = itemResults?[indexPath.row]{
+            cell.textLabel?.text = todoItem.title
+            cell.accessoryType = todoItem.done ? .checkmark : .none
+        }else{
+            cell.textLabel?.text = "No items added"
+        }
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Toggle todo list checkmark on/off
         
-        todoListArray[indexPath.row].done = !todoListArray[indexPath.row].done
-        
-        saveTodoItems()
+        if let selectedItem = itemResults?[indexPath.row] {
+            do{
+                try realm.write {
+                    selectedItem.done = !selectedItem.done
+                }
+            }catch{
+                print("Error updating selected item: \(error)")
+            }
+        }
         tableView.reloadData()
-        // Remove gray selected background
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
@@ -111,23 +107,22 @@ class TodoListViewController: UITableViewController {
         let alert = UIAlertController(title: "Add a new todo", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add Item", style: .default) { (alertAction) in
-            /*
-            // Codable Method
-            let newTodo = TodoItem(title: textField.text!, done: false)
-            self.todoListArray.append(newTodo)
-            */
             
-            // CoreData Method
-            // let viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-            let newTodo = TodoItem(context: self.viewContext)
-            newTodo.title = textField.text!
-            newTodo.done = false
-            newTodo.parentCategory = self.selectedCategory
-            //
+            if let newCategory = self.selectedCategory {
+                do {
+                    try self.realm.write {
+                        let newTodo = Item()
+                        newTodo.title = textField.text!
+                        newTodo.dateCreated = Date()
+                        newCategory.items.append(newTodo)
+                    }
+                    
+                    
+                }catch {
+                    print("Error trying to add todo item in Realm\(error)")
+                }
+            }
             
-            self.todoListArray.append(newTodo)
-            
-            self.saveTodoItems()
             self.tableView.reloadData()
         }
         
@@ -140,103 +135,30 @@ class TodoListViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    func saveTodoItems() {
-        /*
-         // Codable Method
-        let encoder = PropertyListEncoder()
-        
-        do {
-            let data = try encoder.encode(todoListArray)
-            try data.write(to: dataFilePath!)
-        } catch {
-            print("Error encoding todoListArray: \(error)")
-        }
-        */
-        
-        // CoreData Method
-        do{
-            try viewContext.save()
-        }catch {
-            print("Error trying to save CoreData contect \(error)")
-        }
-    }
-    
-    func loadItems(with request: NSFetchRequest<TodoItem> = TodoItem.fetchRequest(), predicate: NSPredicate? = nil){
-        /*
-         // Codable Method
-        if let data = try? Data(contentsOf: dataFilePath!) {
-            let decoder = PropertyListDecoder()
+    func loadItems(){
 
-            do{
-                todoListArray = try decoder.decode([TodoItem].self, from: data)
-            }catch{
-                print("Error decoding todoListArray: \(error)")
-            }
-
-        }
-        */
-        
-         // CoreData Method
-        //let request : NSFetchRequest<TodoItem> = TodoItem.fetchRequest()
-        
-        let categoryPredicate = NSPredicate(format: "parentCategory.name MATCHES %@", selectedCategory!.name!)
-        
-        if let additionalPredicate = predicate {
-            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, additionalPredicate])
-        }else{
-            request.predicate = categoryPredicate
-        }
-        
-
-//        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, predicate])
-//        request.predicate = compoundPredicate
-        
-        do {
-            todoListArray = try viewContext.fetch(request)
-        } catch {
-            print("Error trying to fetch TodoItems: \(error)")
-        }
+        itemResults = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
         
         tableView.reloadData()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
 }
 
 // MARK: Search Bar Methods
 extension TodoListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let request : NSFetchRequest<TodoItem> = TodoItem.fetchRequest()
+
+        itemResults = itemResults?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "dateCreated", ascending: true)
         
-        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
-        
-        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-        
-        loadItems(with: request, predicate: predicate)
-        
-//        do {
-//            todoListArray = try viewContext.fetch(request)
-//        } catch {
-//            print("Error trying to fetch TodoItems: \(error)")
-//        }
-        
-        // tableView.reloadData()
+        tableView.reloadData()
     }
-    
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if(searchBar.text?.count == 0) {
             loadItems()
-            
+
             searchBar.resignFirstResponder()
         }
     }
 }
+
