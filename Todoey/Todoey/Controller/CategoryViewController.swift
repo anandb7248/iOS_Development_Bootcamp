@@ -8,8 +8,9 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
-class CategoryViewController: UITableViewController {
+class CategoryViewController: SwipeTableViewController {
     
     let realm = try! Realm()
     
@@ -24,9 +25,14 @@ class CategoryViewController: UITableViewController {
     // MARK: - Table view data source methods
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         cell.textLabel?.text = categoryArray?[indexPath.row].name ?? "No categories added yet"
+        if let colorVal = categoryArray?[indexPath.row].colorHexVal {
+            let color : UIColor = UIColor(hexString: colorVal)!
+            cell.backgroundColor = color
+            cell.textLabel?.textColor = ContrastColorOf(color, returnFlat: true)
+        }
         
         return cell
     }
@@ -64,6 +70,7 @@ class CategoryViewController: UITableViewController {
 
             let newCategory = Category()
             newCategory.name = textField.text!
+            newCategory.colorHexVal = RandomFlatColor().hexValue()
             
             self.saveCategories(category: newCategory)
             self.tableView.reloadData()
@@ -91,6 +98,21 @@ class CategoryViewController: UITableViewController {
             tableView.reloadData()
         }catch {
             print("Error trying to load category in Realm: \(error)")
+        }
+    }
+    
+    // MARK: Delete row from swipe
+    
+    override func updateModel(at indexPath: IndexPath) {
+        if let categoryToDelete = self.categoryArray?[indexPath.row]{
+
+            do{
+                try self.realm.write {
+                    self.realm.delete(categoryToDelete)
+                }
+            }catch{
+                print("Error deleting category in Realm: \(error)")
+            }
         }
     }
 }
