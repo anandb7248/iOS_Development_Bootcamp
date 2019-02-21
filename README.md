@@ -1,5 +1,24 @@
 # iOS_Dev_Bootcamp
 
+## Typography
+<img width="825" alt="screen shot 2019-02-21 at 9 19 55 am" src="https://user-images.githubusercontent.com/19628705/53188724-df6a8500-35ba-11e9-8bd0-d8fdce2ebbec.png">
+<img width="902" alt="screen shot 2019-02-21 at 9 20 15 am" src="https://user-images.githubusercontent.com/19628705/53188726-e0031b80-35ba-11e9-8ffe-93c26cfe6d0a.png">
+<img width="1205" alt="screen shot 2019-02-21 at 9 20 33 am" src="https://user-images.githubusercontent.com/19628705/53188728-e09bb200-35ba-11e9-95a1-c4cba7a22e21.png">
+<img width="716" alt="screen shot 2019-02-21 at 9 21 03 am" src="https://user-images.githubusercontent.com/19628705/53188733-e42f3900-35ba-11e9-9bc9-20b914b8c31f.png">
+<img width="790" alt="screen shot 2019-02-21 at 9 20 56 am" src="https://user-images.githubusercontent.com/19628705/53188737-e5f8fc80-35ba-11e9-9fdc-7dff1ee097df.png">
+<img width="773" alt="screen shot 2019-02-21 at 9 21 26 am" src="https://user-images.githubusercontent.com/19628705/53188739-e6919300-35ba-11e9-86d0-cf09d3f5713c.png">
+<img width="761" alt="screen shot 2019-02-21 at 9 21 39 am" src="https://user-images.githubusercontent.com/19628705/53188741-e7c2c000-35ba-11e9-8b61-a1aceb3c40e1.png">
+
+
+## Color Theory
+<img width="745" alt="screen shot 2019-02-21 at 8 36 36 am" src="https://user-images.githubusercontent.com/19628705/53186430-d75c1680-35b5-11e9-9a8e-7c1105fb9f0a.png">
+<img width="815" alt="screen shot 2019-02-21 at 8 46 27 am" src="https://user-images.githubusercontent.com/19628705/53186435-d75c1680-35b5-11e9-89b9-144ae4665e8a.png">
+<img width="816" alt="screen shot 2019-02-21 at 8 45 15 am" src="https://user-images.githubusercontent.com/19628705/53186433-d75c1680-35b5-11e9-991e-b692d254d3cb.png">
+<img width="815" alt="screen shot 2019-02-21 at 8 45 42 am" src="https://user-images.githubusercontent.com/19628705/53186431-d75c1680-35b5-11e9-82de-a5ce6b17b7d8.png">
+<img width="812" alt="screen shot 2019-02-21 at 8 45 58 am" src="https://user-images.githubusercontent.com/19628705/53186432-d75c1680-35b5-11e9-9098-49dc37eae151.png">
+<img width="815" alt="screen shot 2019-02-21 at 8 44 58 am" src="https://user-images.githubusercontent.com/19628705/53186434-d75c1680-35b5-11e9-9233-baba5a3355e6.png">
+
+
 ## Todoey
 ![todoey](https://user-images.githubusercontent.com/19628705/53073908-36c70300-349e-11e9-97c5-51ab58c749cb.gif)
 
@@ -105,4 +124,34 @@ https://nshipster.com/nspredicate/
 ### 20. iOS Persistance
 <img width="1060" alt="screen shot 2019-02-15 at 5 33 57 pm" src="https://user-images.githubusercontent.com/19628705/52909406-dd13ce00-323c-11e9-8a1a-98ce2560e98a.png">
 
+### Color Theory
+#### 21. ColorZilla
+http://www.colorzilla.com/
 
+#### 22. Flat UI Colors 
+https://flatuicolors.com/
+
+#### 23. Color Hunt
+https://colorhunt.co/
+
+#### 24. Create Emotion with Color in UX Design
+https://uxplanet.org/create-emotion-with-color-in-ux-design-446a3766b085
+
+### Typography
+#### 25. SkyFonts
+http://skyfonts.com/
+
+#### 26. Font Squirrel
+https://fontsquirrel.com/
+
+#### 27. 26 Typography Rules for Beginners
+https://medium.com/product-design-ux-ui/26-digital-typography-rules-for-beginners-a04c6a5aaff3
+
+#### 28. Typography for Mobile Apps
+https://medium.com/thinking-design/xd-essentials-typography-in-mobile-apps-7048abfb1cc5
+
+#### 29. Favorite Fonts of Typographers
+https://www.canva.com/learn/distinguished-typographers-share-their-favorite-fonts/
+
+#### 30. Font vs Typeface
+https://www.fastcompany.com/3028971/whats-the-difference-between-a-font-and-a-typeface
