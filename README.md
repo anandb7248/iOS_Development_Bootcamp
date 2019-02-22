@@ -181,3 +181,9 @@ https://www.uxbooth.com/articles/using-dark-patterns-for-good/
 
 #### 38. UX Design Tips for your App
 https://medium.com/@InVisionApp/ux-design-tips-for-your-app-8203107c77eb
+
+#### 39. Mobile Patterns
+https://mobile-patterns.com/
+
+#### 40. Pttrns
+https://pttrns.com/iphone-patterns
