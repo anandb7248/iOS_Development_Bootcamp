@@ -187,3 +187,16 @@ https://mobile-patterns.com/
 
 #### 40. Pttrns
 https://pttrns.com/iphone-patterns
+
+### UI/UX Tools
+#### 41. Sketch
+https://www.sketchapp.com/
+
+#### 42. Marvel
+https://marvelapp.com/
+
+#### 43. Free Printable Grid for Wireframing
+https://www.uistencils.com/blogs/news/ui-stencils-drafting-templates
+
+#### 44. Wireframe.cc
+https://wireframe.cc/
