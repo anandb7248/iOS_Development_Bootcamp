@@ -156,7 +156,7 @@ https://www.canva.com/learn/distinguished-typographers-share-their-favorite-font
 #### 30. Font vs Typeface
 https://www.fastcompany.com/3028971/whats-the-difference-between-a-font-and-a-typeface
 
-### User Interaface
+### User Interface (UI)
 #### 31. Web Design in 4 Minutes
 https://jgthms.com/web-design-in-4-minutes/
 
@@ -165,3 +165,19 @@ https://dribbble.com/colors/ee6d66
 
 #### 33. Golden Rules of UI Design
 https://uxplanet.org/golden-rules-of-user-interface-design-19282aeb06b
+
+### User Experience (UX)
+#### 34. UX Myths
+https://uxmyths.com/
+
+#### 35. 52 Weeks of UX
+http://52weeksofux.com/tagged/week_1
+
+#### 36. UX Design in 14 Simple Steps
+https://medium.theuxblog.com/ux-design-in-14-simple-steps-b8a0f2780769
+
+#### 37. Using Dark Patterns for Good
+https://www.uxbooth.com/articles/using-dark-patterns-for-good/
+
+#### 38. UX Design Tips for your App
+https://medium.com/@InVisionApp/ux-design-tips-for-your-app-8203107c77eb
