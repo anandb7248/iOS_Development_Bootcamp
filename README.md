@@ -200,3 +200,28 @@ https://www.uistencils.com/blogs/news/ui-stencils-drafting-templates
 
 #### 44. Wireframe.cc
 https://wireframe.cc/
+
+### Useful UI Resources
+#### 45. Pixabay
+https://pixabay.com/
+
+#### 46. Resplashed
+http://www.resplashed.com/
+
+#### 47. Vecteezy
+https://www.vecteezy.com/
+
+#### 48. Freepix
+https://www.freepik.com/
+
+#### 49. FlatIcon
+https://www.flaticon.com/
+
+#### 50. Material.io
+https://material.io/tools/icons/?style=baseline
+
+#### 51. Fontawesome
+https://fontawesome.com/?from=io
+
+#### 52. Freepik
+https://www.freepik.com/
