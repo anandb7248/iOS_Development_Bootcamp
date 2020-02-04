@@ -1,5 +1,8 @@
 # iOS_Dev_Bootcamp
 
+## Notes
+https://docs.google.com/document/d/1oZ1Z3d45gwMqHuxlj78r2_zpWyKPOG5CjQWtKkdx0vc/edit?usp=sharing
+
 ## SwiftUI
 ### Hacker News Newsfeed (SwiftUI)
 ![Screen Shot 2020-01-21 at 10 03 07 AM](https://user-images.githubusercontent.com/19628705/72939458-c239bb80-3d21-11ea-9e61-7c828a3b4fe6.png)
